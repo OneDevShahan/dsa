@@ -10,8 +10,9 @@ public class App {
         array.insertIntoArray(1, 50);
         array.insertIntoArray(4, 2);
         array.insertIntoArray(0, 3);
-
         array.insertIntoArray(10, 3);
         Arrays.toString(array.arr);
+
+        array.traverArray();
     }
 }

@@ -10,6 +10,13 @@ public class SingleDimentionalArray {
         }
     }
 
+    /**
+     * This method is used to insert elemnt to an array.
+     * 
+     * @param location This is the first paramter to insertIntoArray method
+     * @param element  This is the second parameter to insertIntoArray method
+     * @return Nothing
+     */
     public void insertIntoArray(int location, int element) {
         try {
             if (arr[location] == Integer.MIN_VALUE) {
@@ -22,4 +29,22 @@ public class SingleDimentionalArray {
             System.err.println("Invalid location passed.");
         }
     }
+
+    /**
+     * This method traverse the array.
+     * 
+     * @param Nothing
+     * @return Console out the array elements.
+     * 
+     */
+    public void traverArray() {
+        try {
+            for (int i = 0; i < arr.length; i++) {
+                System.out.println(arr[i] + " ");
+            }
+        } catch (Exception e) {
+            System.err.println("Array doesn't exists.");
+        }
+    }
+
 }
