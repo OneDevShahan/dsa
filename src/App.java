@@ -15,5 +15,6 @@ public class App {
 
         array.traverArray();
         array.searchElement(50);
+        array.deleteElement(1);
     }
 }

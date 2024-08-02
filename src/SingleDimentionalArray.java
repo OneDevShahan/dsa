@@ -40,11 +40,12 @@ public class SingleDimentionalArray {
     public void traverArray() {
         try {
             for (int i = 0; i < arr.length; i++) {
-                System.out.println(arr[i] + " ");
+                System.out.print(arr[i] + " ");
             }
         } catch (Exception e) {
             System.err.println("Array doesn't exists.");
         }
+        System.out.println("");
     }
 
     /**
@@ -60,6 +61,20 @@ public class SingleDimentionalArray {
             }
         }
         System.err.println("Element not found");
+    }
+
+    /**
+     * This method deletes the element for a given index if in range
+     * @param location
+     * @return  Nothing
+    */
+    public void deleteElement(int location){
+        try {
+            arr[location] = Integer.MIN_VALUE;
+            System.out.println("Element have been deleted successfully.");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.err.println("Location is out of range.");
+        }
     }
 
 }
