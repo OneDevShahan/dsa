@@ -14,5 +14,6 @@ public class App {
         Arrays.toString(array.arr);
 
         array.traverArray();
+        array.searchElement(50);
     }
 }

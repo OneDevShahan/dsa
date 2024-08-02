@@ -47,4 +47,19 @@ public class SingleDimentionalArray {
         }
     }
 
+    /**
+     * This method search for a element provided
+    * @param element The value needed to be searched
+    *@return Nothing It consoles out the value if found.    
+     */
+    public void searchElement(int element){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == element) {
+                System.out.println("Element "+ element + " found at "+ i);
+                return;
+            }
+        }
+        System.err.println("Element not found");
+    }
+
 }
