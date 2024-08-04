@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class App {
 
     public static void main(String[] args) {
-        SingleDimentionalArray array = new SingleDimentionalArray(5);
+        SingleDimensionalArray array = new SingleDimensionalArray(5);
         array.insertIntoArray(2, 3);
         array.insertIntoArray(3, 5);
         array.insertIntoArray(1, 50);
@@ -16,5 +16,21 @@ public class App {
         array.traverArray();
         array.searchElement(50);
         array.deleteElement(1);
+
+        TwoDimensionalArray twoDArr = new TwoDimensionalArray(3, 3);
+        System.out.println("<=========== Insert Method =========>");
+        twoDArr.insertIntoArray(0, 1, 3);
+        twoDArr.insertIntoArray(2, 3, 1);
+        twoDArr.insertIntoArray(1, 2, 4);
+        twoDArr.insertIntoArray(3, 0, 9);
+        System.out.println(Arrays.deepToString(twoDArr.arr));
+        System.out.println("<=========== Access Method =========>");
+        twoDArr.accessValue(1, 2);
+        System.out.println("<=========== Traverse Method =========>");
+        twoDArr.traverseArray();
+        System.out.println("<=========== Search Method =========>");
+        twoDArr.searchElement(4);
+        System.out.println("<=========== Delete Method =========>");
+        twoDArr.deleteElement(0, 1);
     }
 }
