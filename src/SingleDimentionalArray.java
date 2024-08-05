@@ -1,9 +1,9 @@
 
-public class SingleDimensionalArray {
+public class SingleDimentionalArray {
 
     public int arr[] = null;
 
-    public SingleDimensionalArray(int size) {
+    public SingleDimentionalArray(int size) {
         arr = new int[size];
         for (int i = 0; i < size; i++) {
             arr[i] = Integer.MIN_VALUE;
